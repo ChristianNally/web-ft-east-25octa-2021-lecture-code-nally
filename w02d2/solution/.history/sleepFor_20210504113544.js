@@ -9,10 +9,7 @@ function sleepFor(sleepDuration) {
   }
 }
 
+
 console.log("begin");
 sleepFor(5000);
 console.log("end");
-
-// notice that things that are scheduled 
-// to occur 'on the event loop' CANNOT start
-// until AFTER the main thread has finished.

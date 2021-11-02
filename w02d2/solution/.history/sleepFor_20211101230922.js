@@ -9,6 +9,7 @@ function sleepFor(sleepDuration) {
   }
 }
 
+
 console.log("begin");
 sleepFor(5000);
 console.log("end");
