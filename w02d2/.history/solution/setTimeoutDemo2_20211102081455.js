@@ -13,6 +13,7 @@ const c2 = () => {
 };
 
 setTimeout(c1,3000);
+setTimeout(c2,1500);
 
 console.log('AFTER setTimeout', x);
 

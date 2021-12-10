@@ -12,15 +12,14 @@ const c2 = () => {
   console.log('INSIDE setTimeout: ', x);
 };
 
+
 setTimeout(c1,3000);
+
+setTimeout(c2,1500);
 
 console.log('AFTER setTimeout', x);
 
-// // EVENT LOOP
 
-// while (NextMessageExists()) {
-//   processNextMessage();
-// }
 
-// // 1500  -> c2()
-// // 3000  -> c1()
+//
+

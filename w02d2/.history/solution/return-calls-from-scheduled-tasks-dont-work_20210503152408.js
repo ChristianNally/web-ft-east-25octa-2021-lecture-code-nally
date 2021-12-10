@@ -1,6 +1,6 @@
 
 function myOutput(ex){
-    console.log("here is what I got:",ex);
+    console.log(ex);
 }
 
 const doLater = function(){
@@ -11,13 +11,3 @@ const doLater = function(){
 }
 
 setTimeout(doLater,1000);
-
-
-
-// const fs = require('fs');
-
-// fs.readFile('filename.txt', 'utf8', (data)=>{
-//   console.log(data);
-// });
-
-

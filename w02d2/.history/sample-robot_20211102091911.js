@@ -4,9 +4,7 @@ function doAction(name,duration,next){
   setTimeout(()=>{
     console.log("name: ",name);
     if (next) {
-      if (Date.now() < start + 100000){
-        next();
-      }
+      next();
     }
   },duration);
 }

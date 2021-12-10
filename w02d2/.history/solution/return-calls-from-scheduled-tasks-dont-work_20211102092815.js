@@ -1,6 +1,6 @@
 
 function myOutput(ex){
-    console.log("here is what I got:",ex);
+    console.log(ex);
 }
 
 const doLater = function(){
