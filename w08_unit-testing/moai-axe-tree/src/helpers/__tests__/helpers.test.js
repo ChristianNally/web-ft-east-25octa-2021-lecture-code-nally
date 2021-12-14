@@ -35,32 +35,27 @@ describe('announceResult function', () => {
   });
 });
 
-// describe('robotChoice function', () => {
+describe('robotChoice function', () => {
 
-//   test('returns the winning item if cheating is true', () => {
-//     const playerSelection = 'Moai';
-//     const cheating = true;
+  test('returns the winning item if cheating is true', () => {
+    const playerSelection = 'Moai';
+    const cheating = true;
 
-//     const actual = robotChoice(playerSelection, cheating);
-//     const expected = 'Tree';
+    const actual = robotChoice(playerSelection, cheating);
+    const expected = 'Tree';
 
-//     expect(actual).toBe(expected);
-//   });
+    expect(actual).toBe(expected);
+  });
 
-//   test('returns a valid item if cheating is false', () => {
-//     const playerSelection = 'Moai';
-//     const cheating = false;
+  test('returns a valid item if cheating is false', () => {
+    const playerSelection = 'Moai';
+    const cheating = false;
 
-//     const actual = robotChoice(playerSelection, cheating);
-//     const expected = ['Moai', 'Axe', 'Tree'];
+    const actual = robotChoice(playerSelection, cheating);
 
-//     // expected.includes(actual);
+    const expected = ['Moai', 'Axe', 'Tree'];
+    expected.includes(actual);
+    expect(expected).toContain(actual);
+  });
 
-//     // expect(actual).toBe(expected);
-//     // expect(expected.includes(actual)).toBe(true);
-
-//     expect(expected).toContain(actual);
-//     // flakey
-//   });
-
-// });
+});

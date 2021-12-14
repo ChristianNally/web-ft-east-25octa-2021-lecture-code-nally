@@ -28,24 +28,25 @@ export const genFeedbackMessage = (status) => {
 
 
 
-export const robotChoice = (playerSelection, cheating) => {
-  return "Moai";
-};
-
 // export const robotChoice = (playerSelection, cheating) => {
+//   return "Moai";
+// };
+
+export const robotChoice = (playerSelection, cheating) => {
 
 // NOTE: instead of a long set of ifs, how about this...
 
-//   const winning = {
-//     Tree: 'Axe',
-//     Axe: 'Moai',
-//     Moai: 'Tree'
-//   };
-//   if (cheating) {
-//     return winning[playerSelection];
-//   }
+  const winning = {
+    Tree: 'Axe',
+    Axe: 'Moai',
+    Moai: 'Tree'
+  };
 
-//   const options = ['Moai', 'Axe', 'Tree'];
-//   const randomIndex = Math.floor(Math.random() * options.length);
-//   return options[randomIndex];
-// };
+  if (cheating) {
+    return winning[playerSelection];
+  }
+
+  const options = ['Moai', 'Axe', 'Tree'];
+  const randomIndex = Math.floor(Math.random() * options.length);
+  return options[randomIndex];
+};

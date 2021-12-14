@@ -27,27 +27,27 @@ const data = [
   },
 ];
 
-// test('can display high scores from an API', () => {
-//   // tell jest to interrupt axios.get requests
-//   axios.get.mockResolvedValue({ data });
+test('can display high scores from an API', () => {
+  // tell jest to interrupt axios.get requests
+  axios.get.mockResolvedValue({ data });
 
-//   // render the component
-//   const {getByTestId, findByText, container, debug} = render(<Result status="Waiting" />);
+  // render the component
+  const {getByTestId, findByText, container, debug} = render(<Result status="Waiting" />);
 
-//   // Try each of these two...
-//   console.log(prettyDOM(container));
-//   // debug();
+  // Try each of these two...
+  // console.log(prettyDOM(container));
+  // debug();
 
-//   // find the high scores button
-//   const highScoresButton = getByTestId('high-scores');
+  // find the high scores button
+  const highScoresButton = getByTestId('high-scores');
 
-//   // click on the high scores button
-//   fireEvent.click(highScoresButton);
+  // click on the high scores button
+  fireEvent.click(highScoresButton);
 
-//   // WARNING!! Do you skip the return here. Doing so would result in tests that pass that should NOT
-//   // Also... note the exact: false config object... include this unless you want EXACT searches
-//   return findByText('Alice', { exact: false }); 
-// });
+  // WARNING!! Do you skip the return here. Doing so would result in tests that pass that should NOT
+  // Also... note the exact: false config object... include this unless you want EXACT searches
+  return findByText('Alice', { exact: false });
+});
 
 test('shows appropriate message when the status is "Waiting"', () => {
   const fakeState = {

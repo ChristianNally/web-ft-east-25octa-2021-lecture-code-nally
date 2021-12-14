@@ -18,7 +18,7 @@ const Computer = (props) => {
         role="img" 
         aria-label="robot" 
         data-testid="robot-head"
-//        className={state.cheating ? 'cheating' : null}
+        className={state.cheating ? 'cheating' : null}
         onClick={handleClick}
       >
         🤖
