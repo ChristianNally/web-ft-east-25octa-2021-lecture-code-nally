@@ -1,5 +1,19 @@
+
 # The Javascript Event Loop as a tool for Creating Simulations
+
 ## Physics, Computers and Math (Oh My!)
+
+### 'The future is already here. It's just not evenly distrubuted.'
+
+Today, humans are on the threshold of high impact from several new transformative technologies, including 
+cryptocurrencies, quantum computing and machine learning. These things have their powerful upsides, but 
+also hold the potential to do a lot of harm, to human well-being as well as to the environment that 
+sustains all of ecology.
+
+The things you have learned in this bootcamp are, without exaggeration, gateways into all of these 
+technologies.
+
+### Watch out for the unintended side-effects of the technology you produce
 
 Today, I'm here to deliver a pitch, an ask, a request, a hope, ... that as you continue your journey into 
 computing, that you'll keep an open mind, a sharp eye out, for all of the consequences of the power that 
@@ -25,15 +39,7 @@ literally (in the original sense of that word) owns a significant fraction of al
 invention, and the side-effects of who had access to the data it generated, may even have changed the 
 outcome of the 2016 election for President of the United States.
 
-Today, humans are on the threshold of high impact from several new transformative technologies, including 
-cryptocurrencies, quantum computing and machine learning. These things have their powerful upsides, but 
-also hold the potential to do a lot of harm, to human well-being as well as to the environment that 
-sustains all of ecology.
-
-The things you have learned in this bootcamp are, without exaggeration, gateways into all of these 
-technologies.
-
-# Leveraging computers to do what they're good at
+### Leveraging computers to do what they're good at
 
 Computers are good at a few things:
 
@@ -45,46 +51,42 @@ Computers are good at a few things:
 Note that all of these points are important for web development, but they're ALSO important for making 
 simulations ('computational models') of physical reality.
 
-# Computers can be a 'time machine' of sorts
+### Computers can be a 'time machine' of sorts
 
 time machine; a machine capable of transporting a person backward or forward in time.
 
 Javascript has a built-in feature that can be used to help with tracking and reacting to events at certain 
 times: The Event Loop, used in asynchronous code.
 
-# So... let us embark on the creation of a web app that can simulate a toy 'solar system'
+### So... let us embark on the creation of a web app that can simulate a toy 'solar system'
 
 We can leverage that Event Loop to simplify keeping track of when updates to our simulated system should 
 occur.
 
-# Using the tools at hand
+### Using the tools at hand
 
 1. HTML
 1. CSS
 1. Front-end Javascript, including jQuery
 
-# Code Review
+### Code Review
 
 - [ ] some fixed constants
 - [ ] A javascript Class for 'Planets'
 - [ ] jquery for DOM manipulation
 
-## Our equations
+### Our equations
 1. F = M * A (Newton's Law)
 1. F = G * Msun * Mplanet / R^2
 1. (where R is the distance from the Sun to the Planet, in pixels ;-) )
 1. DeltaV = A * DeltaT
 1. DeltaX = V * DeltaT
 
-# [demo]
+### [demo]
 
 This demo code is included in YOUR cohort's repository of my instructor's code, under the new 'Modeling' subdirectory. If you would like to run the code on your system, you may have success by just doing 'git pull' in your clone of that repository, cd into the Modeling directory and run the following:
 
-1. npm install
-1. node index.js
-1. http://localhost:3000
-
-# Q: How much does a cow weigh? A: Start with a Spherical Cow.
+### Q: How much does a cow weigh? A: Start with a Spherical Cow.
 
 If a cow is all water, and is the same volume as a sphere of 1 meter diameter, then a cow would weigh 
 approximately 4/3*PI*R^3 = 0.52 cubic meters of water equivalent weight. i.e. 520 kg. (actual answer = 600 
@@ -93,7 +95,7 @@ to 750 kg, which is 'close enough to learn something').
 It's in the spirit of that kind of guessing and estimating that you can start out with toy systems that get 
 you started on more complex things.
 
-# Curiosity and Leisurely Play Precede Innovation
+### Curiosity and Leisurely Play Precede Innovation
 
 While our system is just a 'toy' (because the units of speed and gravity are chosen for convenience only), 
 nevertheless, some interesting emergent behaviours that are also present in the real physical system.
@@ -106,9 +108,9 @@ For our simple system, an object in a closed orbit should return to precisely th
 starts from, as each orbit completes. In our system, there are imperfections that build up over time, 
 sometimes quite rapidly!
 
-# TODO
+### TODO
 
-# REFERENCES
+### REFERENCES
 
 Rocket Science, Computers, Simulations, The Lunar Landing:
 https://www.youtube.com/watch?v=B1J2RMorJXM
@@ -118,4 +120,3 @@ https://github.com/chrislgarry/Apollo-11
 
 Margaret Hamilton:
 https://www.smithsonianmag.com/smithsonian-institution/margaret-hamilton-led-nasa-software-team-landed-astronauts-moon-180971575/
-
